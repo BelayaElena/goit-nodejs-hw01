@@ -1,5 +1,3 @@
-//const yargs = require("yargs");
-//const { hideBin } = require("yargs/helpers");
 const { program } = require("commander");
 
 const contacts = require("./db");
@@ -41,18 +39,3 @@ program.parse();
 
 const options = program.opts();
 invokeAction(options);
-
-// const arr = hideBin(process.argv);
-// const { argv } = yargs(arr);
-
-// invokeAction(argv);
-
-//invokeAction({ action: "list" });
-//invokeAction({ action: "get", contactId: "2" });
-//invokeAction({ action: "remove", contactId: "29d4UEVPG2cvrjFfEL0RW" });
-// invokeAction({
-//   action: "add",
-//   name: "Rose",
-//   email: "rose@com.ua",
-//   phone: "(591) 772-5319",
-// });
